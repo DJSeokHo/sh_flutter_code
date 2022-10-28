@@ -1,26 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:sh_flutter_code/dart/dart_test.dart';
-import 'package:sh_flutter_code/framework/debug/i_log.dart';
 
 void main() {
 
   // runApp(const MyApp());
 
   DartTest dartTest = DartTest();
+
   dartTest.helloWorld();
+  dartTest.greeting("Seok Ho");
 
-  String name = "seok ho\nHow are you?";
-  dartTest.greeting(name);
+  dartTest.iParameter();
+  dartTest.iiCollection();
+  dartTest.iiiConditionControl();
 
-  String event = """\nthis is event\nname is 'event'""";
-  dartTest.greeting(event);
-
-  int i = 123;
-  double d = 456.5;
-  ILog.debug("main", i);
-  ILog.debug("main", d);
-
-  ILog.debug("main", true);
 }
 
 class MyApp extends StatelessWidget {

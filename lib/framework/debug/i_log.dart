@@ -1,11 +1,11 @@
-
+import 'package:flutter/foundation.dart';
 
 class ILog {
 
-  static void debug(String tag, Object content) {
+  static void debug(String tag, Object? content) {
 
-    print("ILog: $tag ===> $content");
-
+    if (kDebugMode) {
+      print("ILog: $tag ===> $content");
+    }
   }
-
 }
