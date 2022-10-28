@@ -19,7 +19,7 @@ class IIIConditionControl {
 
     }
 
-    int i = 0;
+    int i = 0; 
     while(i < list.length) {
       ILog.debug(tag, "${list[i]} ${list[i].runtimeType}");
       i++;

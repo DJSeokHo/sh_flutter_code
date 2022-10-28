@@ -13,6 +13,8 @@ class IICollection {
   }
 
   void listTest() {
+    
+    ILog.debug(tag, "listTest start");
     var listOne = ["'1'", 2, false];
     ILog.debug(tag, listOne);
     ILog.debug(tag, "length is ${listOne.length}");
@@ -30,11 +32,15 @@ class IICollection {
     List<String> listString = [];
     listString.add("1");
     ILog.debug(tag, listString);
+    listString[0] = "b";
+    ILog.debug(tag, listString);
     ILog.debug(tag, "length is ${listString.length}");
+    ILog.debug(tag, "listTest end");
   }
 
   void mapTest() {
 
+    ILog.debug(tag, "mapTest start");
     var mapOne = {
       "name": "SeokHo",
       "age": 18,
@@ -46,6 +52,10 @@ class IICollection {
     ILog.debug(tag, mapOne["coder"] is bool);
     ILog.debug(tag, mapOne["???"]); // not exist, so result is null
 
+    mapOne.forEach((key, value) {
+      ILog.debug(tag, "key $key: value $value ${value.runtimeType}");
+    });
+
     var mapTwo = {};
     mapTwo["name"] = "Seok Ho";
     ILog.debug(tag, mapTwo);
@@ -54,5 +64,6 @@ class IICollection {
 
     ILog.debug(tag, mapTwo.containsKey("age"));
     ILog.debug(tag, mapTwo.containsValue("Seok Ho"));
+    ILog.debug(tag, "mapTest end");
   }
 }

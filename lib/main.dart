@@ -13,7 +13,12 @@ void main() {
   dartTest.iParameter();
   dartTest.iiCollection();
   dartTest.iiiConditionControl();
+  dartTest.ivFunction();
+  dartTest.vClass();
+  dartTest.viAbstractClass();
+  dartTest.viiInterface();
 
+  dartTest.fetchDataTest();
 }
 
 class MyApp extends StatelessWidget {
