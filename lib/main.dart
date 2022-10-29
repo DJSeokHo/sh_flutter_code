@@ -1,24 +1,31 @@
 import 'package:flutter/material.dart';
 import 'package:sh_flutter_code/dart/dart_test.dart';
+import 'package:sh_flutter_code/tutorial/flutter_basic/flutter_basic_01.dart';
+import 'package:sh_flutter_code/tutorial/flutter_basic/flutter_basic_02.dart';
+import 'package:sh_flutter_code/tutorial/flutter_basic/flutter_basic_container.dart';
 
 void main() {
 
+  // runApp(const FlutterBasic01());
+  // runApp(const FlutterBasic02());
+  runApp(const ContainerDemoView());
+
   // runApp(const MyApp());
 
-  DartTest dartTest = DartTest();
-
-  dartTest.helloWorld();
-  dartTest.greeting("Seok Ho");
-
-  dartTest.iParameter();
-  dartTest.iiCollection();
-  dartTest.iiiConditionControl();
-  dartTest.ivFunction();
-  dartTest.vClass();
-  dartTest.viAbstractClass();
-  dartTest.viiInterface();
-
-  dartTest.fetchDataTest();
+  // DartTest dartTest = DartTest();
+  //
+  // dartTest.helloWorld();
+  // dartTest.greeting("Seok Ho");
+  //
+  // dartTest.iParameter();
+  // dartTest.iiCollection();
+  // dartTest.iiiConditionControl();
+  // dartTest.ivFunction();
+  // dartTest.vClass();
+  // dartTest.viAbstractClass();
+  // dartTest.viiInterface();
+  //
+  // dartTest.fetchDataTest();
 }
 
 class MyApp extends StatelessWidget {

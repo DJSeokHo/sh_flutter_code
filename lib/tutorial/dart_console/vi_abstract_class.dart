@@ -1,5 +1,6 @@
 
-import '../framework/debug/i_log.dart';
+
+import '../../framework/debug/i_log.dart';
 
 class VIAbstractClass {
 

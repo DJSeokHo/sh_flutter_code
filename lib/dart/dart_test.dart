@@ -4,14 +4,14 @@ import 'dart:convert';
 import 'package:http/http.dart';
 
 import 'package:sh_flutter_code/framework/debug/i_log.dart';
-import 'package:sh_flutter_code/tutorial/i_parameter.dart';
-import 'package:sh_flutter_code/tutorial/ii_collection.dart';
+import 'package:sh_flutter_code/tutorial/dart_console/i_parameter.dart';
 
-import '../tutorial/iii_condition_control.dart';
-import '../tutorial/iv_function.dart';
-import '../tutorial/v_class.dart';
-import '../tutorial/vi_abstract_class.dart';
-import '../tutorial/vii_interface.dart';
+import '../tutorial/dart_console/ii_collection.dart';
+import '../tutorial/dart_console/iii_condition_control.dart';
+import '../tutorial/dart_console/iv_function.dart';
+import '../tutorial/dart_console/v_class.dart';
+import '../tutorial/dart_console/vi_abstract_class.dart';
+import '../tutorial/dart_console/vii_interface.dart';
 
 
 class DartTest {
@@ -66,7 +66,7 @@ class DartTest {
   void fetchDataTest() async {
     /**
      * 可能遇到奇葩错误，
-     * flutter_tools.stamp 파일 삭제
+     * flutter\bin\cache flutter_tools.stamp 파일 삭제
      * flutter/packages/flutter_tools/lib/src/web 이동
      * chrome.dart 파일 수정
      * --disable-extensions 아래에 --disable-web-security 입력
