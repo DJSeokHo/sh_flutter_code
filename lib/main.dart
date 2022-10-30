@@ -3,12 +3,14 @@ import 'package:sh_flutter_code/dart/dart_test.dart';
 import 'package:sh_flutter_code/tutorial/flutter_basic/flutter_basic_01.dart';
 import 'package:sh_flutter_code/tutorial/flutter_basic/flutter_basic_02.dart';
 import 'package:sh_flutter_code/tutorial/flutter_basic/flutter_basic_container.dart';
+import 'package:sh_flutter_code/tutorial/flutter_basic/flutter_basic_image.dart';
 
 void main() {
 
   // runApp(const FlutterBasic01());
   // runApp(const FlutterBasic02());
-  runApp(const ContainerDemoView());
+  // runApp(const ContainerDemoView());
+  runApp(const FlutterBasicImageView());
 
   // runApp(const MyApp());
 
