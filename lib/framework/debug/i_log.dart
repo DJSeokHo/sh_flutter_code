@@ -5,7 +5,12 @@ class ILog {
   static void debug(String tag, Object? content) {
 
     if (kDebugMode) {
-      print("ILog: $tag ===> $content");
+      if (content != null) {
+        print("ILog: $tag ===> $content");
+      }
+      else {
+        print("ILog: $tag ===> null");
+      }
     }
   }
 }

@@ -1,29 +1,15 @@
 
 import 'package:flutter/material.dart';
-import 'package:sh_flutter_code/tutorial/flutter_basic/flutter_basic_navigator/with_routes/routes.dart';
 
-class FlutterBasicRoutePathNavigatorExample extends StatelessWidget {
+class FlutterBasicNavigatorWithRoutesHomeStateView extends StatefulWidget {
+  const FlutterBasicNavigatorWithRoutesHomeStateView({super.key});
 
-  static const tag = "FlutterBasicRoutePathNavigatorExample";
-
-  const FlutterBasicRoutePathNavigatorExample({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      onGenerateRoute: onGenerateRoute,
-      home: _HomeStateView(),
-    );
-  }
-}
-
-class _HomeStateView extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
-    return _HomeView();
+    return _FlutterBasicNavigatorWithRoutesHomeView();
   }
 }
-class _HomeView extends State<StatefulWidget> {
+class _FlutterBasicNavigatorWithRoutesHomeView extends State<StatefulWidget> {
 
   int _valueCount = 0;
 
@@ -42,8 +28,7 @@ class _HomeView extends State<StatefulWidget> {
                 onPressed: () {
                   Navigator.pushNamed(
                     context,
-                    '/search',
-                    arguments: ""
+                    '/search'
                   );
                 },
                 child: const Text("Search")
@@ -57,10 +42,24 @@ class _HomeView extends State<StatefulWidget> {
                   Navigator.pushNamed(
                     context,
                     '/pass_value',
-                    arguments: "$_valueCount"
+                    arguments: {"value": _valueCount}
                   );
                 },
                 child: const Text("Pass value")
+            ),
+            const SizedBox(height: 6,),
+            ElevatedButton(
+                onPressed: () {
+
+                  _valueCount++;
+
+                  Navigator.pushNamed(
+                    context,
+                    '/product',
+                    arguments: {"value": _valueCount}
+                  );
+                },
+                child: const Text("Product")
             )
           ],
         ),

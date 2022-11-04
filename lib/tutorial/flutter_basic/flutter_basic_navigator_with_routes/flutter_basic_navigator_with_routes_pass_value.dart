@@ -1,11 +1,13 @@
 
 import 'package:flutter/material.dart';
 
-class FlutterBasicNavigatorPassValueWithRoute extends StatelessWidget {
+import '../../../framework/debug/i_log.dart';
 
-  final String arguments;
+class FlutterBasicNavigatorWithRoutePassValueView extends StatelessWidget {
 
-  const FlutterBasicNavigatorPassValueWithRoute({this.arguments = "", super.key});
+  final Map arguments;
+
+  const FlutterBasicNavigatorWithRoutePassValueView(this.arguments, {super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +19,7 @@ class FlutterBasicNavigatorPassValueWithRoute extends StatelessWidget {
       body: Center(
         child: Column(
           children: [
-            Text("Value is $arguments"),
+            Text("Value is ${arguments["value"]}"),
             ElevatedButton(
                 onPressed: () {
                   Navigator.of(context).pop();
