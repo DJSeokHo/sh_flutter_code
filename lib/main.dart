@@ -6,6 +6,7 @@ import 'package:sh_flutter_code/tutorial/flutter_basic/flutter_basic_01.dart';
 import 'package:sh_flutter_code/tutorial/flutter_basic/flutter_basic_02.dart';
 import 'package:sh_flutter_code/tutorial/flutter_basic/flutter_basic_aspectratio.dart';
 import 'package:sh_flutter_code/tutorial/flutter_basic/flutter_basic_navigator/flutter_basic_simple_navigator.dart';
+import 'package:sh_flutter_code/tutorial/flutter_basic/flutter_basic_navigator_with_replace_routes/flutter_basic_navigator_with_replace_routes_main.dart';
 import 'package:sh_flutter_code/tutorial/flutter_basic/flutter_basic_navigator_with_routes/flutter_basic_navigator_with_routes_main.dart';
 import 'package:sh_flutter_code/tutorial/flutter_basic/flutter_basic_system_bottom_navigation/flutter_basic_system_bottom_navigation.dart';
 import 'package:sh_flutter_code/tutorial/flutter_basic/flutter_basic_card.dart';
@@ -45,7 +46,8 @@ void main() {
   // runApp(const FlutterBasicStatefulExample());
   // runApp(const FlutterBasicSystemBottomNavigationBarExample());
   // runApp(const FlutterBasicSimpleNavigator());
-  runApp(const FlutterBasicNavigatorWithRoutesMain());
+  // runApp(const FlutterBasicNavigatorWithRoutesMain());
+  runApp(const FBNWRRMainApp());
 
   // runApp(const MyApp());
 

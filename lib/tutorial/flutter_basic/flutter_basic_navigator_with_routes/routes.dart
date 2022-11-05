@@ -9,7 +9,7 @@ import 'flutter_basic_navigator_with_routes_search.dart';
 
 const _tag = "routes";
 
-final routes = {
+final _routes = {
   '/': (BuildContext context) {
     return const FlutterBasicNavigatorWithRoutesHomeStateView();
   },
@@ -28,7 +28,7 @@ var onGenerateRoute = (RouteSettings settings) {
 
   final String routeName = settings.name as String;
   ILog.debug(_tag, "content ${settings.arguments}");
-  final Function pageContentBuilder = routes[routeName] as Function;
+  final Function pageContentBuilder = _routes[routeName] as Function;
 
   final Route route = MaterialPageRoute(
       builder: (BuildContext context) {
