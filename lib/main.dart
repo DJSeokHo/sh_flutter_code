@@ -1,10 +1,12 @@
-import 'dart:html';
+// import 'dart:html';
+// import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:sh_flutter_code/dart/dart_test.dart';
 import 'package:sh_flutter_code/tutorial/flutter_basic/flutter_basic_01.dart';
 import 'package:sh_flutter_code/tutorial/flutter_basic/flutter_basic_02.dart';
 import 'package:sh_flutter_code/tutorial/flutter_basic/flutter_basic_aspectratio.dart';
+import 'package:sh_flutter_code/tutorial/flutter_basic/flutter_basic_drawer/flutter_basic_drawer.dart';
 import 'package:sh_flutter_code/tutorial/flutter_basic/flutter_basic_navigator/flutter_basic_simple_navigator.dart';
 import 'package:sh_flutter_code/tutorial/flutter_basic/flutter_basic_navigator_with_replace_routes/flutter_basic_navigator_with_replace_routes_main.dart';
 import 'package:sh_flutter_code/tutorial/flutter_basic/flutter_basic_navigator_with_routes/flutter_basic_navigator_with_routes_main.dart';
@@ -21,12 +23,45 @@ import 'package:sh_flutter_code/tutorial/flutter_basic/flutter_basic_padding.dar
 import 'package:sh_flutter_code/tutorial/flutter_basic/flutter_basic_row.dart';
 import 'package:sh_flutter_code/tutorial/flutter_basic/flutter_basic_stack.dart';
 import 'package:sh_flutter_code/tutorial/flutter_basic/flutter_basic_stateful.dart';
+import 'package:sh_flutter_code/tutorial/flutter_basic/flutter_basic_top_tab_bar/flutter_basic_top_tab_bar.dart';
+import 'package:sh_flutter_code/tutorial/flutter_basic/flutter_basic_top_tab_bar/top_tab_bar_and_bottom_navigation_bar/flutter_basic_top_tab_bar_and_bottom_navigation_bar.dart';
+import 'package:sh_flutter_code/tutorial/flutter_basic/flutter_basic_top_tab_bar/with_tap_controller/flutter_basic_top_tab_bar_with_tabcontroller.dart';
 import 'package:sh_flutter_code/tutorial/flutter_basic/flutter_basic_wrap.dart';
+
+import 'framework/debug/i_log.dart';
+
+const _tag = "Main";
 
 void main() {
 
-  // disable web right click
-  window.document.onContextMenu.listen((evt) => evt.preventDefault());
+  // device info, only for not web
+  // if(Platform.isAndroid) {
+  //   // Android
+  //   ILog.debug(_tag, "Android");
+  // }
+  // else if(Platform.isIOS) {
+  //   // IOS
+  //   ILog.debug(_tag, "iOS");
+  // }
+  // else if(Platform.isFuchsia) {
+  //   // Fuchsia
+  //   ILog.debug(_tag, "Fuchsia");
+  // }
+  // else if(Platform.isWindows) {
+  //   // Windows
+  //   ILog.debug(_tag, "Window");
+  // }
+  // else if(Platform.isMacOS) {
+  //   // MacOS
+  //   ILog.debug(_tag, "Mac");
+  // }
+  // else if(Platform.isLinux) {
+  //   // Linux
+  //   ILog.debug(_tag, "Linux");
+  // }
+
+  // disable web right click only for web
+  // window.document.onContextMenu.listen((evt) => evt.preventDefault());
 
   // runApp(const FlutterBasic01());
   // runApp(const FlutterBasic02());
@@ -47,7 +82,11 @@ void main() {
   // runApp(const FlutterBasicSystemBottomNavigationBarExample());
   // runApp(const FlutterBasicSimpleNavigator());
   // runApp(const FlutterBasicNavigatorWithRoutesMain());
-  runApp(const FBNWRRMainApp());
+  // runApp(const FBNWRRMainApp());
+  // runApp(const FlutterBasicTopTabBarView());
+  // runApp(const FlutterBasicTopTabBarAndBottomNavigationBar());
+  // runApp(const FlutterBasicTopTabBarWithTapController());
+  runApp(const FlutterBasicDrawer());
 
   // runApp(const MyApp());
 
