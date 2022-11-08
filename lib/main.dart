@@ -6,6 +6,7 @@ import 'package:sh_flutter_code/dart/dart_test.dart';
 import 'package:sh_flutter_code/tutorial/flutter_basic/flutter_basic_01.dart';
 import 'package:sh_flutter_code/tutorial/flutter_basic/flutter_basic_02.dart';
 import 'package:sh_flutter_code/tutorial/flutter_basic/flutter_basic_aspectratio.dart';
+import 'package:sh_flutter_code/tutorial/flutter_basic/flutter_basic_buttons.dart';
 import 'package:sh_flutter_code/tutorial/flutter_basic/flutter_basic_drawer/flutter_basic_drawer.dart';
 import 'package:sh_flutter_code/tutorial/flutter_basic/flutter_basic_navigator/flutter_basic_simple_navigator.dart';
 import 'package:sh_flutter_code/tutorial/flutter_basic/flutter_basic_navigator_with_replace_routes/flutter_basic_navigator_with_replace_routes_main.dart';
@@ -86,7 +87,8 @@ void main() {
   // runApp(const FlutterBasicTopTabBarView());
   // runApp(const FlutterBasicTopTabBarAndBottomNavigationBar());
   // runApp(const FlutterBasicTopTabBarWithTapController());
-  runApp(const FlutterBasicDrawer());
+  // runApp(const FlutterBasicDrawer());
+  runApp(const FlutterBasicButtons());
 
   // runApp(const MyApp());
 
