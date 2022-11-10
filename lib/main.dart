@@ -13,7 +13,10 @@ import 'package:sh_flutter_code/tutorial/flutter_basic/flutter_basic_drawer/flut
 import 'package:sh_flutter_code/tutorial/flutter_basic/flutter_basic_navigator/flutter_basic_simple_navigator.dart';
 import 'package:sh_flutter_code/tutorial/flutter_basic/flutter_basic_navigator_with_replace_routes/flutter_basic_navigator_with_replace_routes_main.dart';
 import 'package:sh_flutter_code/tutorial/flutter_basic/flutter_basic_navigator_with_routes/flutter_basic_navigator_with_routes_main.dart';
+import 'package:sh_flutter_code/tutorial/flutter_basic/flutter_basic_radio.dart';
 import 'package:sh_flutter_code/tutorial/flutter_basic/flutter_basic_sign_in_ui.dart';
+import 'package:sh_flutter_code/tutorial/flutter_basic/flutter_basic_swiper.dart';
+import 'package:sh_flutter_code/tutorial/flutter_basic/flutter_basic_switch.dart';
 import 'package:sh_flutter_code/tutorial/flutter_basic/flutter_basic_system_bottom_navigation/flutter_basic_system_bottom_navigation.dart';
 import 'package:sh_flutter_code/tutorial/flutter_basic/flutter_basic_card.dart';
 import 'package:sh_flutter_code/tutorial/flutter_basic/flutter_basic_column.dart';
@@ -27,6 +30,7 @@ import 'package:sh_flutter_code/tutorial/flutter_basic/flutter_basic_padding.dar
 import 'package:sh_flutter_code/tutorial/flutter_basic/flutter_basic_row.dart';
 import 'package:sh_flutter_code/tutorial/flutter_basic/flutter_basic_stack.dart';
 import 'package:sh_flutter_code/tutorial/flutter_basic/flutter_basic_stateful.dart';
+import 'package:sh_flutter_code/tutorial/flutter_basic/flutter_basic_system_date_picker.dart';
 import 'package:sh_flutter_code/tutorial/flutter_basic/flutter_basic_textfield.dart';
 import 'package:sh_flutter_code/tutorial/flutter_basic/flutter_basic_top_tab_bar/flutter_basic_top_tab_bar.dart';
 import 'package:sh_flutter_code/tutorial/flutter_basic/flutter_basic_top_tab_bar/top_tab_bar_and_bottom_navigation_bar/flutter_basic_top_tab_bar_and_bottom_navigation_bar.dart';
@@ -96,7 +100,11 @@ void main() {
   // runApp(const FlutterBasicTextField());
   // runApp(const FlutterBasicSignInUI());
   // runApp(const FlutterBasicCheckBox());
-  runApp(const FlutterBasicCheckBoxListItem());
+  // runApp(const FlutterBasicCheckBoxListItem());
+  // runApp(const FlutterBasicRadio());
+  // runApp(const FlutterBasicSwitch());
+  // runApp(const FlutterBasicSystemDatePicker());
+  runApp(const FlutterBasicSwiper());
 
   // runApp(const MyApp());
 
