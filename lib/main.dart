@@ -9,6 +9,8 @@ import 'package:sh_flutter_code/tutorial/flutter_basic/flutter_basic_aspectratio
 import 'package:sh_flutter_code/tutorial/flutter_basic/flutter_basic_buttons.dart';
 import 'package:sh_flutter_code/tutorial/flutter_basic/flutter_basic_check_box.dart';
 import 'package:sh_flutter_code/tutorial/flutter_basic/flutter_basic_check_box_list_item.dart';
+import 'package:sh_flutter_code/tutorial/flutter_basic/flutter_basic_custom_dialog/flutter_basic_custom_dialog.dart';
+import 'package:sh_flutter_code/tutorial/flutter_basic/flutter_basic_dialog.dart';
 import 'package:sh_flutter_code/tutorial/flutter_basic/flutter_basic_drawer/flutter_basic_drawer.dart';
 import 'package:sh_flutter_code/tutorial/flutter_basic/flutter_basic_navigator/flutter_basic_simple_navigator.dart';
 import 'package:sh_flutter_code/tutorial/flutter_basic/flutter_basic_navigator_with_replace_routes/flutter_basic_navigator_with_replace_routes_main.dart';
@@ -104,7 +106,9 @@ void main() {
   // runApp(const FlutterBasicRadio());
   // runApp(const FlutterBasicSwitch());
   // runApp(const FlutterBasicSystemDatePicker());
-  runApp(const FlutterBasicSwiper());
+  // runApp(const FlutterBasicSwiper());
+  // runApp(const FlutterBasicDialog());
+  runApp(const FlutterBasicCustomDialog());
 
   // runApp(const MyApp());
 
