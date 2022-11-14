@@ -1,5 +1,3 @@
-
-
 import 'package:http/http.dart';
 
 import 'package:sh_flutter_code/framework/debug/i_log.dart';
@@ -11,6 +9,7 @@ import '../tutorial/dart_console/iv_function.dart';
 import '../tutorial/dart_console/v_class.dart';
 import '../tutorial/dart_console/vi_abstract_class.dart';
 import '../tutorial/dart_console/vii_interface.dart';
+import 'package:dio/dio.dart';
 
 
 class DartTest {
@@ -79,5 +78,17 @@ class DartTest {
     final response = await client.get(url);
     ILog.debug(tag, response.body);
 
+  }
+
+  void fetchDataTestWithDIO() async {
+
+    try {
+      var response = await Dio().get('https://34.64.141.125');
+      // response = await dio.get('/test', queryParameters: {'id': 12, 'name': 'wendu'});
+      ILog.debug(tag, "fetchDataTestWithDIO ${response.data.toString()}");
+    }
+    catch (e) {
+      ILog.debug(tag, e);
+    }
   }
 }

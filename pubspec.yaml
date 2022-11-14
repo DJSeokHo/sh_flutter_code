@@ -39,6 +39,7 @@ dependencies:
   date_format: ^2.0.7
   flutter_swiper_view: ^1.1.8
   toast: ^0.2.9
+  dio: ^4.0.6
 
 dev_dependencies:
   flutter_test:
