@@ -1,0 +1,3 @@
+class DefaultExampleModel {
+  String name = "";
+}

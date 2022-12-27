@@ -40,6 +40,8 @@ dependencies:
   flutter_swiper_view: ^1.1.8
   toast: ^0.2.9
   dio: ^4.0.6
+  provider: ^6.0.5
+  lottie: ^2.1.0
 
 dev_dependencies:
   flutter_test:
@@ -69,6 +71,7 @@ flutter:
     - images/3.0x/a.png
     - images/4.0x/a.png
     - images/coding_with_cat_icon.jpeg
+    - images/menu_icon.json
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
