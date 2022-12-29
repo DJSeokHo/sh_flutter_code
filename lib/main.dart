@@ -42,6 +42,8 @@ import 'package:sh_flutter_code/tutorial/flutter_basic/flutter_basic_wrap.dart';
 import 'examples/clip_overflow_example/clip_overflow_example.dart';
 import 'examples/default_example_refactoring/default_example.dart';
 import 'examples/default_example_refactoring/default_example_view_model.dart';
+import 'examples/fade_animation_image_example/fade_animation_image_example.dart';
+import 'examples/list_refresh_item_example/list_refresh_item_example.dart';
 import 'examples/lottie_example/lottie_example.dart';
 import 'examples/page_view_example/page_view_example.dart';
 import 'examples/scroll_tag_example/ScrollTagExample.dart';
@@ -124,7 +126,9 @@ void main() {
   // runApp(const ClipOverflowExample());
   // runApp(const PageViewExample());
   // runApp(HomeRoadmapView());
-  runApp(const ScrollTagExample());
+  // runApp(const ScrollTagExample());
+  // runApp(const ListRefreshItemExample());
+  runApp(const FadeAnimationImageExample());
 
   DartTest dartTest = DartTest();
 

@@ -18,34 +18,32 @@ class ScrollTagExample extends StatelessWidget {
           width: double.infinity,
           height: double.infinity,
           color: Colors.white,
-          child: ListView(
+          child: SingleChildScrollView(
             scrollDirection: Axis.horizontal,
-            children: <Widget>[
-              Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-                Row(
+            child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
+              Row(
                   children: const <Widget>[
                     _TagItemView("#More benefits"),
                     _TagItemView("#World's first offline NFT mining Contest"),
                     _TagItemView("#Anti-war"),
                     _TagItemView("#Justice"),
                   ]
-                ),
-                Row(
-                  children: const <Widget>[
-                    _TagItemView("#World NFT Treasure Hunting Contest"),
-                    _TagItemView("#NFT P2E GAME"),
-                    _TagItemView("#Well rounded Ecosystem and story"),
-                  ],
-                ),
-                Row(
-                  children: const <Widget>[
-                    _TagItemView("#Airdrop of 3D Metaverse Avatars"),
-                    _TagItemView("#Continuous benefits"),
-                    _TagItemView("#Environment"),
-                  ],
-                )
-              ])
-            ],
+              ),
+              Row(
+                children: const <Widget>[
+                  _TagItemView("#World NFT Treasure Hunting Contest"),
+                  _TagItemView("#NFT P2E GAME"),
+                  _TagItemView("#Well rounded Ecosystem and story"),
+                ],
+              ),
+              Row(
+                children: const <Widget>[
+                  _TagItemView("#Airdrop of 3D Metaverse Avatars"),
+                  _TagItemView("#Continuous benefits"),
+                  _TagItemView("#Environment"),
+                ],
+              )
+            ]),
           ),
         ),
       ),
@@ -69,7 +67,7 @@ class _TagItemView extends StatelessWidget {
         border: Border.all(
           // color: Theme.of(context).colorScheme.borderColor,
             color: Colors.black,
-            width: 1.6
+            width: 1
         ),
         borderRadius: const BorderRadius.all(Radius.circular(100.0)),
         boxShadow: const [
@@ -77,7 +75,7 @@ class _TagItemView extends StatelessWidget {
             // color: Theme.of(context).colorScheme.shadowBackground,
               color: Colors.black,
               offset: Offset(0.0, 0.0),
-              blurRadius: 16.0,
+              blurRadius: 4.0,
               blurStyle: BlurStyle.solid
           )
         ],
