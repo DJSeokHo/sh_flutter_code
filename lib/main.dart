@@ -48,6 +48,7 @@ import 'examples/lottie_example/lottie_example.dart';
 import 'examples/page_view_example/page_view_example.dart';
 import 'examples/scroll_tag_example/ScrollTagExample.dart';
 import 'examples/time_line_example/time_line_example.dart';
+import 'examples/youtube_player_example/youtube_player_example.dart';
 import 'framework/debug/i_log.dart';
 
 const _tag = "Main";
@@ -128,7 +129,8 @@ void main() {
   // runApp(HomeRoadmapView());
   // runApp(const ScrollTagExample());
   // runApp(const ListRefreshItemExample());
-  runApp(const FadeAnimationImageExample());
+  // runApp(const FadeAnimationImageExample());
+  runApp(const YoutubePlayerExample());
 
   DartTest dartTest = DartTest();
 
