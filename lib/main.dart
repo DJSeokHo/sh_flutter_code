@@ -45,6 +45,7 @@ import 'examples/default_example_refactoring/default_example_view_model.dart';
 import 'examples/fade_animation_image_example/fade_animation_image_example.dart';
 import 'examples/list_refresh_item_example/list_refresh_item_example.dart';
 import 'examples/lottie_example/lottie_example.dart';
+import 'examples/multiple_selection_list/multiple_selection_list.dart';
 import 'examples/page_view_example/page_view_example.dart';
 import 'examples/scroll_tag_example/ScrollTagExample.dart';
 import 'examples/time_line_example/time_line_example.dart';
@@ -130,7 +131,8 @@ void main() {
   // runApp(const ScrollTagExample());
   // runApp(const ListRefreshItemExample());
   // runApp(const FadeAnimationImageExample());
-  runApp(const YoutubePlayerExample());
+  // runApp(const YoutubePlayerExample());
+  runApp(const MultipleSelectionList());
 
   DartTest dartTest = DartTest();
 
