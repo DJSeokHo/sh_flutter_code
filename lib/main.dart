@@ -3,6 +3,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:sh_flutter_code/dart/dart_test.dart';
+import 'package:sh_flutter_code/examples/navigator_without_route_example/navigator_without_route_example.dart';
 import 'package:sh_flutter_code/tutorial/flutter_basic/flutter_basic_01.dart';
 import 'package:sh_flutter_code/tutorial/flutter_basic/flutter_basic_02.dart';
 import 'package:sh_flutter_code/tutorial/flutter_basic/flutter_basic_aspectratio.dart';
@@ -132,7 +133,8 @@ void main() {
   // runApp(const ListRefreshItemExample());
   // runApp(const FadeAnimationImageExample());
   // runApp(const YoutubePlayerExample());
-  runApp(const MultipleSelectionList());
+  // runApp(const MultipleSelectionList());
+  runApp(const NavigatorWithoutRouteExample());
 
   DartTest dartTest = DartTest();
 
