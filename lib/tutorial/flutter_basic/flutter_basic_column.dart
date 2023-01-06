@@ -28,7 +28,7 @@ class _ColumnInContainerExampleView extends StatelessWidget {
       height: 500,
       color: Colors.black54,
       child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.start,
         // mainAxisAlignment: MainAxisAlignment.spaceEvenly, // 在父view的垂直位置，和row相反
         crossAxisAlignment: CrossAxisAlignment.end, // 在父view的水平位置，和row相反
         // crossAxisAlignment: CrossAxisAlignment.stretch,
