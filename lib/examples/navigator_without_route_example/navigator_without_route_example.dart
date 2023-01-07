@@ -23,7 +23,10 @@ class _ContentView extends StatelessWidget {
         height: double.infinity,
         child: const Center(
           child: Text(
-            "Hello"
+            "Hello",
+            style: TextStyle(
+              color: Colors.white
+            ),
           ),
         ),
       ),
