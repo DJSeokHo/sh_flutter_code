@@ -41,6 +41,7 @@ import 'package:sh_flutter_code/tutorial/flutter_basic/flutter_basic_top_tab_bar
 import 'package:sh_flutter_code/tutorial/flutter_basic/flutter_basic_wrap.dart';
 
 import 'examples/clip_overflow_example/clip_overflow_example.dart';
+import 'examples/custom_dialog_example/custom_dialog_example.dart';
 import 'examples/default_example_refactoring/default_example.dart';
 import 'examples/default_example_refactoring/default_example_view_model.dart';
 import 'examples/fade_animation_image_example/fade_animation_image_example.dart';
@@ -134,7 +135,8 @@ void main() {
   // runApp(const FadeAnimationImageExample());
   // runApp(const YoutubePlayerExample());
   // runApp(const MultipleSelectionList());
-  runApp(const NavigatorWithoutRouteExample());
+  // runApp(const NavigatorWithoutRouteExample());
+  runApp(const CustomDialogExample());
 
   DartTest dartTest = DartTest();
 
