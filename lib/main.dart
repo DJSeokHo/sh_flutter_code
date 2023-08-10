@@ -127,7 +127,7 @@ void main() {
   // runApp(const FlutterBasicDialog());
   // runApp(const FlutterBasicCustomDialog());
 
-  // runApp(const MyApp());
+  runApp(const MyApp());
 
   // runApp(const DefaultExampleRefactoring());
   // runApp(const LottieExample());
@@ -143,7 +143,7 @@ void main() {
   // runApp(const CustomDialogExample());
   // runApp(const OnlineVideoPlayerExample());
   // runApp(const GridViewWaterfallExample());
-  runApp(const PhysicalBackPressHandlerExample());
+  // runApp(const PhysicalBackPressHandlerExample());
 
   DartTest dartTest = DartTest();
 
@@ -259,7 +259,7 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             Text(
               '$_counter',
-              style: Theme.of(context).textTheme.headline4,
+              style: Theme.of(context).textTheme.headlineMedium,
             ),
           ],
         ),
