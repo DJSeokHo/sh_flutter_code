@@ -67,9 +67,6 @@ void main() {
   // runApp(const FlutterBasicSwiper());
   // runApp(const FlutterBasicDialog());
   // runApp(const FlutterBasicCustomDialog());
-
-  runApp(const MyApp());
-
   // runApp(const DefaultExampleRefactoring());
   // runApp(const LottieExample());
   // runApp(const ClipOverflowExample());
@@ -102,6 +99,9 @@ void main() {
   //
   // // dartTest.fetchDataTest();
   // dartTest.fetchDataTestWithDIO();
+
+  // runApp(const MyApp());
+  
 }
 
 class MyApp extends StatelessWidget {
@@ -110,28 +110,30 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
 
         primarySwatch: Colors.blueGrey,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyHomePageView(title: 'Flutter Demo Home Page'),
     );
   }
 }
 
-class MyHomePage extends StatefulWidget {
+class MyHomePageView extends StatefulWidget {
 
-  const MyHomePage({super.key, required this.title});
+  const MyHomePageView({super.key, required this.title});
 
   final String title;
 
   @override
-  State<MyHomePage> createState() => _MyHomePageState();
+  State<MyHomePageView> createState() => _MyHomePageViewState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _MyHomePageViewState extends State<MyHomePageView> {
+
   int _counter = 0;
 
   void _incrementCounter() {
