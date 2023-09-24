@@ -157,6 +157,7 @@ void main() {
   dartTest.vClass();
   dartTest.viAbstractClass();
   dartTest.viiInterface();
+  dartTest.viiiAsync();
 
   // dartTest.fetchDataTest();
   dartTest.fetchDataTestWithDIO();

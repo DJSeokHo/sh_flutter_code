@@ -4,12 +4,14 @@ import 'package:sh_flutter_code/framework/debug/i_log.dart';
 import 'package:sh_flutter_code/tutorial/dart_console/i_parameter.dart';
 
 import '../tutorial/dart_console/ii_collection.dart';
-import '../tutorial/dart_console/iii_condition_control.dart';
+import '../tutorial/dart_console/iii_looper_and_condition_control.dart';
 import '../tutorial/dart_console/iv_function.dart';
 import '../tutorial/dart_console/v_class.dart';
 import '../tutorial/dart_console/vi_abstract_class.dart';
 import '../tutorial/dart_console/vii_interface.dart';
 import 'package:dio/dio.dart';
+
+import '../tutorial/dart_console/viii_async.dart';
 
 
 class DartTest {
@@ -35,7 +37,7 @@ class DartTest {
   }
 
   void iiiConditionControl() {
-    IIIConditionControl iiiConditionControl = IIIConditionControl();
+    IIILooperAndConditionControl iiiConditionControl = IIILooperAndConditionControl();
     iiiConditionControl.test();
     iiiConditionControl.testAdvance();
   }
@@ -61,6 +63,16 @@ class DartTest {
     viiInterface.test();
   }
 
+  void viiiAsync() {
+
+    VIIIAsync viiiAsync = VIIIAsync();
+    viiiAsync.futureAndThen();
+    viiiAsync.futureAndThenWithException();
+    viiiAsync.futureWithMultipleFuture();
+    viiiAsync.task();
+
+  }
+
   void fetchDataTest() async {
     /**
      * 可能遇到奇葩错误，
@@ -77,7 +89,6 @@ class DartTest {
     var url = Uri.https(urlString);
     final response = await client.get(url);
     ILog.debug(tag, response.body);
-
   }
 
   void fetchDataTestWithDIO() async {
@@ -91,4 +102,5 @@ class DartTest {
       ILog.debug(tag, e);
     }
   }
+
 }
