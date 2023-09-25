@@ -1,9 +1,9 @@
 
 import '../../framework/debug/i_log.dart';
 
-class IIIConditionControl {
+class IIILooperAndConditionControl {
 
-  static const tag = "IIIConditionControl";
+  static const tag = "IIILooperAndConditionControl";
 
   void testAdvance() {
 

@@ -14,6 +14,9 @@ class IVFunction {
 
     ILog.debug(tag, "function test start");
 
+    functionWithLambdaParameter(() => {
+      ILog.debug(tag, "I am callback")
+    });
     ILog.debug(tag, returnInt());
     ILog.debug(tag, returnString());
     ILog.debug(tag, returnList());
@@ -28,10 +31,15 @@ class IVFunction {
     _test();
   }
 
-  // 似有方法
+  // 私有方法
   void _test() {
 
   }
+
+  void functionWithLambdaParameter(var callback) {
+    callback();
+  }
+
 
   int returnInt() {
     return 5;
