@@ -14,15 +14,28 @@ class _ContentView extends StatelessWidget {
     return MaterialApp(
       title: "sliver",
       home: Scaffold(
-        appBar: AppBar(
-          title: const Text("sliver"),
-        ),
-        body: Container(
-          child: ,
+        body: CustomScrollView(
+          slivers: [
+
+            const SliverAppBar(
+              title: Text("sliver bar"),
+              floating: true,
+              flexibleSpace: Placeholder(),
+              expandedHeight: 200,
+            ),
+
+            SliverList(
+                delegate: SliverChildBuilderDelegate(
+                  (context, index) {
+                    return ListTile(title: Text('Item #$index'));
+                  },
+                  childCount: 1000
+                )
+            )
+
+          ],
         ),
       ),
     );
   }
-
-
 }
