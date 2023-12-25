@@ -22,3 +22,9 @@ class FlutterBasic01 extends StatelessWidget {
     );
   }
 }
+
+void main() {
+  runApp(
+      const FlutterBasic01()
+  );
+}

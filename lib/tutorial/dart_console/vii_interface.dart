@@ -1,4 +1,4 @@
-
+import 'package:flutter/material.dart';
 import '../../framework/debug/i_log.dart';
 
 class VIIInterface {
@@ -44,4 +44,8 @@ abstract class IDatabase {
   void select();
   void put();
   void delete();
+}
+
+void main() {
+  VIIInterface().test();
 }

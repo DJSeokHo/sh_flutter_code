@@ -104,3 +104,7 @@ class _StackView extends StatelessWidget {
     );
   }
 }
+
+void main() {
+  runApp(const FlutterBasicStack());
+}

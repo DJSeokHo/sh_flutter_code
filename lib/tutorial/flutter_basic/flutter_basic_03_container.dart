@@ -1,5 +1,3 @@
-
-
 import 'package:flutter/material.dart';
 
 class ContainerDemoView extends StatelessWidget {
@@ -65,4 +63,8 @@ class _HomeContentView extends StatelessWidget {
     );
   }
 
+}
+
+void main() {
+  runApp(const ContainerDemoView());
 }

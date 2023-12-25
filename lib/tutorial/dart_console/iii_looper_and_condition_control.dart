@@ -1,13 +1,9 @@
-
+import 'package:flutter/material.dart';
 import '../../framework/debug/i_log.dart';
 
 class IIILooperAndConditionControl {
 
   static const tag = "IIILooperAndConditionControl";
-
-  void testAdvance() {
-
-  }
 
   void test() {
 
@@ -43,4 +39,8 @@ class IIILooperAndConditionControl {
         break;
     }
   }
+}
+
+void main() {
+  IIILooperAndConditionControl().test();
 }

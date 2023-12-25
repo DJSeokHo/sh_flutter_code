@@ -1,4 +1,4 @@
-
+import 'package:flutter/material.dart';
 import '../../framework/debug/i_log.dart';
 
 class IParameter {
@@ -19,5 +19,10 @@ class IParameter {
     bool b = true;
     ILog.debug("main", b);
   }
+}
+
+void main() {
+
+  IParameter().test();
 
 }

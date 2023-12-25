@@ -32,3 +32,7 @@ class _AspectRatioExampleView extends StatelessWidget {
     );
   }
 }
+
+void main() {
+  runApp(const FlutterBasicAspectRatioExample());
+}

@@ -87,3 +87,7 @@ class _IconView extends StatelessWidget {
   }
 
 }
+
+void main() {
+  runApp(const FlutterBasicColumnExample());
+}

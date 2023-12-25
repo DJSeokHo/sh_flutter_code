@@ -139,3 +139,7 @@ class _TestModel {
 
   _TestModel(this.title, this.subTitle);
 }
+
+void main() {
+  runApp(const FlutterBasicGridView());
+}

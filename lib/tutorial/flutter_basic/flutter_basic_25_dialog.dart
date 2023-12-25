@@ -1,6 +1,4 @@
-
 import 'package:flutter/material.dart';
-// import 'package:fluttertoast/fluttertoast.dart';
 import 'package:toast/toast.dart';
 import 'package:sh_flutter_code/framework/debug/i_log.dart';
 
@@ -193,4 +191,6 @@ class _ContentView extends State<StatefulWidget> {
   }
 }
 
-
+void main() {
+  runApp(const FlutterBasicDialog());
+}

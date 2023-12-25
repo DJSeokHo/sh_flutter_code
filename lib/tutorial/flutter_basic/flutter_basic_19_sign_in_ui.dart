@@ -129,3 +129,7 @@ class _ContentView extends State<StatefulWidget> {
   }
 
 }
+
+void main() {
+  runApp(const FlutterBasicSignInUI());
+}

@@ -1,4 +1,4 @@
-
+import 'package:flutter/material.dart';
 import '../../framework/debug/i_log.dart';
 
 class VIIIAsync {
@@ -83,4 +83,12 @@ class VIIIAsync {
       ILog.debug(tag, e);
     }
   }
+}
+
+void main() {
+  VIIIAsync viiiAsync = VIIIAsync();
+  viiiAsync.futureAndThen();
+  viiiAsync.futureAndThenWithException();
+  viiiAsync.futureWithMultipleFuture();
+  viiiAsync.task();
 }

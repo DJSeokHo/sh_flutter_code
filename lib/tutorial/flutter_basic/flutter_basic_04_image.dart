@@ -113,3 +113,7 @@ class _NetworkImageView extends StatelessWidget {
   }
 
 }
+
+void main() {
+  runApp(const FlutterBasicImageView());
+}

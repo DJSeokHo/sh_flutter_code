@@ -57,3 +57,7 @@ class FlutterBasicButtons extends StatelessWidget {
   }
 
 }
+
+void main() {
+  runApp(const FlutterBasicButtons());
+}

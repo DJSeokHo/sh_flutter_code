@@ -150,3 +150,7 @@ class _ContentView extends State<StatefulWidget> {
     onResult(result);
   }
 }
+
+void main() {
+  runApp(const FlutterBasicSystemDatePicker());
+}

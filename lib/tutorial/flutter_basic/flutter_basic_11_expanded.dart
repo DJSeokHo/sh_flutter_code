@@ -155,3 +155,7 @@ class _IconView extends StatelessWidget {
   }
 
 }
+
+void main() {
+  runApp(const FlutterBasicExpandedExample());
+}

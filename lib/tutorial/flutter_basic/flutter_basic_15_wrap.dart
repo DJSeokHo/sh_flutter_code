@@ -143,3 +143,7 @@ class _TagItemView extends StatelessWidget {
     );
   }
 }
+
+void main() {
+  runApp(const FlutterBasicWrapExample());
+}

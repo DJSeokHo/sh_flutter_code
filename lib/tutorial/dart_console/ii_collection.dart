@@ -1,5 +1,4 @@
-
-
+import 'package:flutter/material.dart';
 import '../../framework/debug/i_log.dart';
 
 class IICollection {
@@ -66,4 +65,8 @@ class IICollection {
     ILog.debug(tag, mapTwo.containsValue("Seok Ho"));
     ILog.debug(tag, "mapTest end");
   }
+}
+
+void main() {
+  IICollection().test();
 }

@@ -87,3 +87,7 @@ class _SimpleExampleView extends State<StatefulWidget> {
     );
   }
 }
+
+void main() {
+  runApp(const FlutterBasicStatefulExample());
+}

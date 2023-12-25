@@ -170,3 +170,7 @@ class _ListItemView extends StatelessWidget {
   }
 
 }
+
+void main() {
+  runApp(const FlutterBasicCardExample());
+}

@@ -1,4 +1,4 @@
-
+import 'package:flutter/material.dart';
 import '../../framework/debug/i_log.dart';
 
 class VClass {
@@ -55,4 +55,8 @@ class Person {
 /// 类继承
 class Developer extends Person {
   Developer(super.name, super.age);
+}
+
+void main() {
+  VClass().test();
 }

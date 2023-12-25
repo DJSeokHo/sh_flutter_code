@@ -114,3 +114,7 @@ class _PaddingExampleView extends StatelessWidget {
     );
   }
 }
+
+void main() {
+  runApp(const FlutterBasicPaddingExample());
+}

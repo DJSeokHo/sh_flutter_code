@@ -1,5 +1,4 @@
-
-
+import 'package:flutter/material.dart';
 import '../../framework/debug/i_log.dart';
 
 class VIAbstractClass {
@@ -33,5 +32,8 @@ class Dog extends Animal {
   String say() {
     return "Wang, Wang";
   }
+}
 
+void main() {
+  VIAbstractClass().test();
 }

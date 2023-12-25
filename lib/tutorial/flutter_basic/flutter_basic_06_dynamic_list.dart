@@ -121,3 +121,7 @@ class _DynamicListView extends StatelessWidget {
   }
 
 }
+
+void main() {
+  runApp(const FlutterBasicDynamicListView());
+}

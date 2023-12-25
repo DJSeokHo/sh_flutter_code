@@ -43,3 +43,7 @@ class HomeContentView extends StatelessWidget {
     );
   }
 }
+
+void main() {
+  runApp(const FlutterBasic02());
+}

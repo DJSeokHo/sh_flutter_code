@@ -160,3 +160,7 @@ class _SimpleListView extends StatelessWidget {
     );
   }
 }
+
+void main() {
+  runApp(const FlutterBasicListView());
+}

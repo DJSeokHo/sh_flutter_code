@@ -32,22 +32,6 @@ void main() {
   // disable web right click only for web
   // window.document.onContextMenu.listen((evt) => evt.preventDefault());
 
-  // runApp(const FlutterBasic01());
-  // runApp(const FlutterBasic02());
-  // runApp(const ContainerDemoView());
-  // runApp(const FlutterBasicImageView());
-  // runApp(const FlutterBasicListView());
-  // runApp(const FlutterBasicDynamicListView());
-  // runApp(const FlutterBasicGridView());
-  // runApp(const FlutterBasicPaddingExample());
-  // runApp(const FlutterBasicRowExample());
-  // runApp(const FlutterBasicColumnExample());
-  // runApp(const FlutterBasicExpandedExample());
-  // runApp(const FlutterBasicStack());
-  // runApp(const FlutterBasicAspectRatioExample());
-  // runApp(const FlutterBasicCardExample());
-  // runApp(const FlutterBasicWrapExample());
-  // runApp(const FlutterBasicStatefulExample());
   // runApp(const FlutterBasicSystemBottomNavigationBarExample());
   // runApp(const FlutterBasicSimpleNavigator());
   // runApp(const FlutterBasicNavigatorWithRoutesMain());
@@ -56,16 +40,8 @@ void main() {
   // runApp(const FlutterBasicTopTabBarAndBottomNavigationBar());
   // runApp(const FlutterBasicTopTabBarWithTapController());
   // runApp(const FlutterBasicDrawer());
-  // runApp(const FlutterBasicButtons());
-  // runApp(const FlutterBasicTextField());
-  // runApp(const FlutterBasicSignInUI());
-  // runApp(const FlutterBasicCheckBox());
-  // runApp(const FlutterBasicCheckBoxListItem());
-  // runApp(const FlutterBasicRadio());
-  // runApp(const FlutterBasicSwitch());
-  // runApp(const FlutterBasicSystemDatePicker());
-  // runApp(const FlutterBasicSwiper());
-  // runApp(const FlutterBasicDialog());
+
+
   // runApp(const FlutterBasicCustomDialog());
   // runApp(const DefaultExampleRefactoring());
   // runApp(const LottieExample());
@@ -83,25 +59,7 @@ void main() {
   // runApp(const GridViewWaterfallExample());
   // runApp(const PhysicalBackPressHandlerExample());
 
-  // DartTest dartTest = DartTest();
-  //
-  // dartTest.helloWorld();
-  // dartTest.greeting("Seok Ho");
-  //
-  // dartTest.iParameter();
-  // dartTest.iiCollection();
-  // dartTest.iiiConditionControl();
-  // dartTest.ivFunction();
-  // dartTest.vClass();
-  // dartTest.viAbstractClass();
-  // dartTest.viiInterface();
-  // dartTest.viiiAsync();
-  //
-  // // dartTest.fetchDataTest();
-  // dartTest.fetchDataTestWithDIO();
-
-  // runApp(const MyApp());
-  
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {

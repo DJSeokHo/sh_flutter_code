@@ -48,3 +48,7 @@ class _ContentView extends State<_ContentStateView> {
     );
   }
 }
+
+void main() {
+  runApp(const FlutterBasicSwiper());
+}
