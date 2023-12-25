@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 
+void main() {
+  runApp(const ClipOverflowExample());
+}
+
 class ClipOverflowExample extends StatelessWidget {
   const ClipOverflowExample({super.key});
 

@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 
+void main() {
+  runApp(const FlutterBasicDrawer());
+}
+
 class FlutterBasicDrawer extends StatelessWidget {
   const FlutterBasicDrawer({super.key});
 

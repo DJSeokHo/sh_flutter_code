@@ -1,10 +1,11 @@
-
-
 import 'package:flutter/material.dart';
-
 import '../../../../framework/debug/i_log.dart';
 import 'fbttbabnb_sub_normal.dart';
 import 'fbttbabnb_sub_top_tab_bar.dart';
+
+void main() {
+  runApp(const FlutterBasicTopTabBarAndBottomNavigationBar());
+}
 
 const _tag = "FlutterBasicTopTabBarAndBottomNavigationBar";
 

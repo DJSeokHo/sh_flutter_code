@@ -1,5 +1,8 @@
-
 import 'package:flutter/material.dart';
+
+void main() {
+  runApp(const CustomDialogExample());
+}
 
 class CustomDialogExample extends StatelessWidget {
   const CustomDialogExample({super.key});

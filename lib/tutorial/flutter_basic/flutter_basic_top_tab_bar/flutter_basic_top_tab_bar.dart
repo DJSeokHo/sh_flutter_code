@@ -1,7 +1,9 @@
-
 import 'package:flutter/material.dart';
-
 import '../../../framework/debug/i_log.dart';
+
+void main() {
+  runApp(const FlutterBasicTopTabBarView());
+}
 
 const _tag = "FlutterBasicTopTabBarView";
 

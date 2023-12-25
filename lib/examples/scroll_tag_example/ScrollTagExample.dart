@@ -1,6 +1,9 @@
-
-
 import 'package:flutter/material.dart';
+
+
+void main() {
+  runApp(const ScrollTagExample());
+}
 
 class ScrollTagExample extends StatelessWidget {
   const ScrollTagExample({super.key});
@@ -18,11 +21,11 @@ class ScrollTagExample extends StatelessWidget {
           width: double.infinity,
           height: double.infinity,
           color: Colors.white,
-          child: SingleChildScrollView(
+          child: const SingleChildScrollView(
             scrollDirection: Axis.horizontal,
             child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
               Row(
-                  children: const <Widget>[
+                  children: <Widget>[
                     _TagItemView("#More benefits"),
                     _TagItemView("#World's first offline NFT mining Contest"),
                     _TagItemView("#Anti-war"),
@@ -30,14 +33,14 @@ class ScrollTagExample extends StatelessWidget {
                   ]
               ),
               Row(
-                children: const <Widget>[
+                children: <Widget>[
                   _TagItemView("#World NFT Treasure Hunting Contest"),
                   _TagItemView("#NFT P2E GAME"),
                   _TagItemView("#Well rounded Ecosystem and story"),
                 ],
               ),
               Row(
-                children: const <Widget>[
+                children: <Widget>[
                   _TagItemView("#Airdrop of 3D Metaverse Avatars"),
                   _TagItemView("#Continuous benefits"),
                   _TagItemView("#Environment"),

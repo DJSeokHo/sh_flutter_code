@@ -2,6 +2,10 @@
 import 'package:flutter/material.dart';
 import 'package:sh_flutter_code/tutorial/flutter_basic/flutter_basic_navigator_with_routes/routes.dart';
 
+void main() {
+  runApp(const FlutterBasicNavigatorWithRoutesMain());
+}
+
 class FlutterBasicNavigatorWithRoutesMain extends StatelessWidget {
 
   static const tag = "FlutterBasicNavigatorWithRoutesMain";

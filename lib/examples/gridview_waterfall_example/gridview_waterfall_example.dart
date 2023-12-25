@@ -2,6 +2,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 
+void main() {
+  runApp(const GridViewWaterfallExample());
+}
+
 class GridViewWaterfallExample extends StatelessWidget {
   const GridViewWaterfallExample({super.key});
 

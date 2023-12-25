@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 
+void main() {
+  runApp(const MultipleSelectionList());
+}
+
 class MultipleSelectionList extends StatelessWidget {
   const MultipleSelectionList({super.key});
 

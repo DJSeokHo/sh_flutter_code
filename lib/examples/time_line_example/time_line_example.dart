@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:sh_flutter_code/examples/time_line_example/roadmap_model.dart';
 
+void main() {
+  runApp(HomeRoadmapView());
+}
+
 class HomeRoadmapView extends StatelessWidget {
 
   final List<RoadmapModel> list = _Constants.homeRoadmapList();

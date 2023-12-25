@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 
+void main() {
+  runApp(const NavigatorWithoutRouteExample());
+}
+
 class NavigatorWithoutRouteExample extends StatelessWidget {
   const NavigatorWithoutRouteExample({super.key});
 

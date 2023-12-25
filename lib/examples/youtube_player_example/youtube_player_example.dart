@@ -1,7 +1,10 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:youtube_player_iframe/youtube_player_iframe.dart';
+
+void main() {
+  runApp(const YoutubePlayerExample());
+}
 
 class YoutubePlayerExample extends StatelessWidget {
   const YoutubePlayerExample({super.key});

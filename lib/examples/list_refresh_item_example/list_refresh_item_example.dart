@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 
+void main() {
+  runApp(const ListRefreshItemExample());
+}
+
 class ListRefreshItemExample extends StatelessWidget {
   const ListRefreshItemExample({super.key});
 

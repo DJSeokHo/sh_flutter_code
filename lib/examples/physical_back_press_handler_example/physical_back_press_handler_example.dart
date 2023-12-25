@@ -1,6 +1,10 @@
 
 import 'package:flutter/material.dart';
 
+void main() {
+  runApp(const PhysicalBackPressHandlerExample());
+}
+
 class PhysicalBackPressHandlerExample extends StatelessWidget {
   const PhysicalBackPressHandlerExample({super.key});
 

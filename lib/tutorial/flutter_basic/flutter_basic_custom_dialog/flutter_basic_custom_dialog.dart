@@ -2,6 +2,10 @@
 import 'package:flutter/material.dart';
 import 'package:sh_flutter_code/tutorial/flutter_basic/flutter_basic_custom_dialog/custom_dialog.dart';
 
+void main() {
+  runApp(const FlutterBasicCustomDialog());
+}
+
 class FlutterBasicCustomDialog extends StatelessWidget {
   const FlutterBasicCustomDialog({super.key});
 

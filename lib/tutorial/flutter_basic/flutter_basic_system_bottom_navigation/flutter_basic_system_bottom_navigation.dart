@@ -1,10 +1,13 @@
-
 import 'package:flutter/material.dart';
 import 'package:sh_flutter_code/framework/debug/i_log.dart';
 import 'package:sh_flutter_code/tutorial/flutter_basic/flutter_basic_system_bottom_navigation/flutter_basic_bottom_navigation_category.dart';
 import 'package:sh_flutter_code/tutorial/flutter_basic/flutter_basic_system_bottom_navigation/flutter_basic_bottom_navigation_settings.dart';
 
 import 'flutter_basic_bottom_navigation_home.dart';
+
+void main() {
+  runApp(const FlutterBasicSystemBottomNavigationBarExample());
+}
 
 class FlutterBasicSystemBottomNavigationBarExample extends StatelessWidget {
   const FlutterBasicSystemBottomNavigationBarExample({super.key});

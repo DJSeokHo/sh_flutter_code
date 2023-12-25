@@ -2,6 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:sh_flutter_code/examples/default_example_refactoring/default_example_view_model.dart';
 
+void main() {
+  runApp(const DefaultExampleRefactoring());
+}
+
 class DefaultExampleRefactoring extends StatelessWidget {
   const DefaultExampleRefactoring({super.key});
 

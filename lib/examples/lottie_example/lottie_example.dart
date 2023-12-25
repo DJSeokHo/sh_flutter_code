@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
-
 import '../../framework/debug/i_log.dart';
+
+void main() {
+  runApp(const LottieExample());
+}
 
 const _tag = "LottieExample";
 

@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
-
 import '../../framework/debug/i_log.dart';
+
+void main() {
+  runApp(const PageViewExample());
+}
 
 class PageViewExample extends StatelessWidget {
   const PageViewExample({super.key});

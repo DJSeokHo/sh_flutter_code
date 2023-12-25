@@ -1,8 +1,11 @@
-
 import 'package:flutter/material.dart';
 
 import 'sub/flutter_basic_navigator_pass_value.dart';
 import 'sub/flutter_basic_navigator_search.dart';
+
+void main() {
+  runApp(const FlutterBasicSimpleNavigator());
+}
 
 class FlutterBasicSimpleNavigator extends StatelessWidget {
   const FlutterBasicSimpleNavigator({super.key});

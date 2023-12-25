@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 
+void main() {
+  runApp(const FadeAnimationImageExample());
+}
+
 class FadeAnimationImageExample extends StatelessWidget {
 
   const FadeAnimationImageExample({super.key});
