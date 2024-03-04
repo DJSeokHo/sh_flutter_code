@@ -1,28 +1,49 @@
 import 'package:flutter/material.dart';
 import '../../framework/debug/i_log.dart';
 
-class IParameter {
-
-  static const tag = "I_Parameter";
-
-  void test() {
-
-    String name = "seok ho\nHow are you?";
-    ILog.debug(tag, name);
-
-    int i = 123;
-    ILog.debug(tag, i);
-
-    double d = 456.5;
-    ILog.debug(tag, d);
-
-    bool b = true;
-    ILog.debug("main", b);
-  }
-}
-
 void main() {
 
-  IParameter().test();
+  const tag = "parameters";
+
+  // 整数
+  int i = 123;
+  ILog.debug(tag, i);
+
+  // 浮点数
+  double d = 456.5;
+  ILog.debug(tag, d);
+
+  // 布尔值
+  bool b = true;
+  ILog.debug(tag, b);
+
+  // 字符串
+  String name = "seok ho\nHow are you?";
+  ILog.debug(tag, name);
+  ILog.debug(tag, name[2]); // 取字符，结果是o
+  ILog.debug(tag, name * 5); // 把 name 的值复制5次
+
+  // 字符串
+  String longString = """
+  Hello
+  World
+  """;
+  ILog.debug(tag, longString);
+
+  // 原始字符串，忽略转意符
+  String rawString = r"seok ho\nHow are you?";
+  ILog.debug(tag, rawString); // seok ho\nHow are you?
+
+  // 字符串格式化
+  String formatString = "1 + 1 = ${1 + 1}";
+  ILog.debug(tag, formatString);
+
+  // 只能赋值一次
+  final String finalString = "123";
+
+  // 常量，也只能赋值一次
+  const String constString = "aaa";
+
+  // final 和 const 只有本质区别的，在后面的类的部分会解释。
 
 }

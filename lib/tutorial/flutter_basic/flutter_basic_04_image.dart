@@ -13,9 +13,9 @@ class FlutterBasicImageView extends StatelessWidget {
         appBar: AppBar(
           title: const Text("Image demo"),
         ),
-        // body: _NetworkImageView(),
+        body: _NetworkImageView(),
         // body: _RoundedCornerImageView(),
-        body: _AssetsImageView(),
+        // body: _AssetsImageView(),
       ),
     );
 
@@ -31,18 +31,15 @@ class _RoundedCornerImageView extends StatelessWidget {
 
     return Center(
       child: Container(
-        child: Container(
-          width: 300,
-          height: 300,
-          decoration: BoxDecoration(
+        width: 300,
+        height: 300,
+        decoration: BoxDecoration(
             color: Colors.yellow,
             borderRadius: BorderRadius.circular(150),
             image: const DecorationImage(
-              image: NetworkImage( "https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_GenshinImpact_miHoYoLimited_S2_1200x1600-c12cdcc2cac330df2185aa58c508e820"),
-              fit: BoxFit.cover
+                image: NetworkImage( "https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_GenshinImpact_miHoYoLimited_S2_1200x1600-c12cdcc2cac330df2185aa58c508e820"),
+                fit: BoxFit.cover
             )
-          ),
-
         ),
       ),
     );
@@ -57,24 +54,22 @@ class _AssetsImageView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Container(
-        child: Container(
-          width: 300,
-          height: 300,
-          decoration: const BoxDecoration(
-              color: Colors.yellow
-          ),
-          child: Image.asset(
-            "images/a.png",
-            alignment: Alignment.center,
-            color: Colors.black, // 混合用的颜色
-            colorBlendMode: BlendMode.overlay, // 混合模式
-            // fit: BoxFit.cover, // 图片的裁剪显示方式, cover，可能拉伸，可能剪切，图片要充满整个容器，还不能变形
-            // fit: BoxFit.fill, // 图片的裁剪显示方式, fill，图片会被拉伸变形，图片要充满整个容器
-            // fit: BoxFit.contain, // 图片的裁剪显示方式, contain，显示原始比例，图片要充满整个容器，有可能留下间隙
-            // fit: BoxFit.fitWidth,
-            // fit: BoxFit.fitHeight,
-            // repeat: ImageRepeat.repeatX, // 有空隙的地方重复图片来进行填充
-          ),
+        width: 300,
+        height: 300,
+        decoration: const BoxDecoration(
+            color: Colors.yellow
+        ),
+        child: Image.asset(
+          "images/a.png",
+          alignment: Alignment.center,
+          color: Colors.black, // 混合用的颜色
+          colorBlendMode: BlendMode.overlay, // 混合模式
+          // fit: BoxFit.cover, // 图片的裁剪显示方式, cover，可能拉伸，可能剪切，图片要充满整个容器，还不能变形
+          // fit: BoxFit.fill, // 图片的裁剪显示方式, fill，图片会被拉伸变形，图片要充满整个容器
+          // fit: BoxFit.contain, // 图片的裁剪显示方式, contain，显示原始比例，图片要充满整个容器，有可能留下间隙
+          // fit: BoxFit.fitWidth,
+          // fit: BoxFit.fitHeight,
+          // repeat: ImageRepeat.repeatX, // 有空隙的地方重复图片来进行填充
         ),
       ),
     );
@@ -89,24 +84,22 @@ class _NetworkImageView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Container(
-        child: Container(
-          width: 300,
-          height: 300,
-          decoration: const BoxDecoration(
+        width: 400,
+        height: 300,
+        decoration: const BoxDecoration(
             color: Colors.yellow
-          ),
-          child: Image.network(
-            "https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_GenshinImpact_miHoYoLimited_S2_1200x1600-c12cdcc2cac330df2185aa58c508e820",
-            alignment: Alignment.topLeft,
-            color: Colors.black, // 混合用的颜色
-            colorBlendMode: BlendMode.overlay, // 混合模式
-            // fit: BoxFit.cover, // 图片的裁剪显示方式, cover，可能拉伸，可能剪切，图片要充满整个容器，还不能变形
-            // fit: BoxFit.fill, // 图片的裁剪显示方式, fill，图片会被拉伸变形，图片要充满整个容器
-            // fit: BoxFit.contain, // 图片的裁剪显示方式, contain，显示原始比例，图片要充满整个容器，有可能留下间隙
-            // fit: BoxFit.fitWidth,
-            // fit: BoxFit.fitHeight,
-            repeat: ImageRepeat.repeatX, // 有空隙的地方重复图片来进行填充
-          ),
+        ),
+        child: Image.network(
+          "https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_GenshinImpact_miHoYoLimited_S2_1200x1600-c12cdcc2cac330df2185aa58c508e820",
+          alignment: Alignment.center,
+          color: Colors.black, // 混合用的颜色
+          colorBlendMode: BlendMode.overlay, // 混合模式
+          // fit: BoxFit.cover, // 图片的裁剪显示方式, cover，可能拉伸，可能剪切，图片要充满整个容器，还不能变形
+          // fit: BoxFit.fill, // 图片的裁剪显示方式, fill，图片会被拉伸变形，图片要充满整个容器
+          // fit: BoxFit.contain, // 图片的裁剪显示方式, contain，显示原始比例，图片要充满整个容器，有可能留下间隙
+          // fit: BoxFit.fitWidth,
+          // fit: BoxFit.fitHeight,
+          // repeat: ImageRepeat.repeatX, // 有空隙的地方重复图片来进行填充
         ),
       ),
     );

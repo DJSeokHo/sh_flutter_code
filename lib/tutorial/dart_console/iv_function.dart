@@ -5,11 +5,6 @@ class IVFunction {
 
   static const tag = "IVFunction";
 
-  // 函数变量
-  var function = (String name, {int age = 18}) {
-    ILog.debug(tag, "name is $name and age is $age");
-  };
-
   void test() {
 
     ILog.debug(tag, "function test start");
@@ -33,8 +28,12 @@ class IVFunction {
 
   // 私有方法
   void _test() {
-
   }
+
+  // 函数变量
+  var function = (String name, {int age = 18}) {
+    ILog.debug(tag, "name is $name and age is $age");
+  };
 
   void functionWithLambdaParameter(var callback) {
     callback();
@@ -65,6 +64,10 @@ class IVFunction {
     return a + b;
   }
 
+  // 和上面的函数是一样的
+  int returnSumShortFunction(int a, int b) => a + b;
+
+  // 带有可选参数 age
   String returnOptionParameter(String name, {int age = 18}) {
     return "$name $age";
   }

@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class ContainerDemoView extends StatelessWidget {
@@ -47,7 +48,7 @@ class _HomeContentView extends StatelessWidget {
           // overflow: TextOverflow.fade,
           overflow: TextOverflow.clip,
           maxLines: 1,
-          textScaleFactor: 1.2, // 字体放大两倍
+          textScaler: TextScaler.linear(1.2), // 字体放大两倍
           style: TextStyle(
             fontSize: 16.0,
             color: Colors.white,

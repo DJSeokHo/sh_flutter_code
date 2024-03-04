@@ -12,7 +12,11 @@ class IICollection {
   }
 
   void listTest() {
-    
+
+    var constList = const [1, 2, 3]; // 不可变的list
+    // constList.add(1); // 无效，会报错
+    ILog.debug(tag, constList);
+
     ILog.debug(tag, "listTest start");
     var listOne = ["'1'", 2, false];
     ILog.debug(tag, listOne);
@@ -20,11 +24,14 @@ class IICollection {
     ILog.debug(tag, listOne[1]);
 
     var listTwo = [];
-    ILog.debug(tag, "length is ${listTwo.length}");
     listTwo.add("a");
     listTwo.add(22);
     listTwo.add(true);
     listTwo.insertAll(0, listOne);
+    ILog.debug(tag, listTwo);
+    ILog.debug(tag, "length is ${listTwo.length}");
+    listTwo.removeAt(0);
+    listTwo.remove(22);
     ILog.debug(tag, listTwo);
     ILog.debug(tag, "length is ${listTwo.length}");
 
