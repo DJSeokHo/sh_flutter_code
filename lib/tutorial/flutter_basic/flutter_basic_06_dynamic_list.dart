@@ -59,6 +59,7 @@ class _SimpleListViewState extends State<_SimpleListView> {
   Future<void> _initData() async {
 
     var list = await _fetchData(0, 20);
+
     setState(() {
       _data.clear();
       _data.addAll(list);

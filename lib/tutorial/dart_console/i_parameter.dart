@@ -46,4 +46,12 @@ void main() {
 
   // final 和 const 只有本质区别的，在后面的类的部分会解释。
 
+  String test = "  apple, banana, orange,   mango";
+  // String test = "  apple";
+  List<String> resultList = test.split(",").map((String s) => s.trim()).toList();
+  for (int i = 0; i < resultList.length; i++) {
+    ILog.debug(tag, resultList[i]);
+  }
+  ILog.debug(tag, "total count ${resultList.length}");
+
 }
