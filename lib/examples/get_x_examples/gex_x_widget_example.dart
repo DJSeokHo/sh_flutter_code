@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 
+import 'list_example/get_x_list_observer_example.dart';
+
 class GetXWidgetExample extends StatelessWidget {
   GetXWidgetExample({super.key});
 
@@ -112,6 +114,14 @@ class GetXWidgetExample extends StatelessWidget {
                     saveValue.value = box.read("key");
                   },
                   child: const Text("Load")
+              ),
+
+              const SizedBox(height: 10,),
+              ElevatedButton(
+                  onPressed: () {
+                    Get.to(() => GetXListObserverExample());
+                  },
+                  child: const Text("Go List")
               )
             ],
           ),
