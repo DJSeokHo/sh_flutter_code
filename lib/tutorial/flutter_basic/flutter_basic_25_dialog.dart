@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:toast/toast.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 import 'package:sh_flutter_code/framework/debug/i_log.dart';
 
 class FlutterBasicDialog extends StatelessWidget {
@@ -31,7 +31,6 @@ class _ContentView extends State<StatefulWidget> {
   @override
   void initState() {
     super.initState();
-    ToastContext().init(context);
   }
 
   @override
@@ -186,8 +185,16 @@ class _ContentView extends State<StatefulWidget> {
   }
 
   void _toast(BuildContext context) async {
-    ToastContext().init(context);
-    Toast.show("Toast plugin app", duration: Toast.lengthShort, gravity:  Toast.bottom);
+
+    Fluttertoast.showToast(
+        msg: "This is Center Short Toast",
+        toastLength: Toast.LENGTH_SHORT,
+        gravity: ToastGravity.CENTER,
+        timeInSecForIosWeb: 1,
+        backgroundColor: Colors.red,
+        textColor: Colors.white,
+        fontSize: 16.0
+    );
   }
 }
 
