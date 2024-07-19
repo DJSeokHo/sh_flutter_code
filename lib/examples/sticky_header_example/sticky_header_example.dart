@@ -55,8 +55,8 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
     final scrollOffset = _scrollController.offset;
 
     // Calculate new pinning states
-    final isTabBarPinned = scrollOffset >= 599;
-    ILog.debug("???", "scrollOffset $scrollOffset >= 599");
+    final isTabBarPinned = scrollOffset >= 1059;
+    ILog.debug("???", "scrollOffset $scrollOffset >= 1059");
     // Only update state if there's a change
     if (isTabBarPinned) {
       ILog.debug("?????", "!!!! isTabBarPinned $isTabBarPinned");
@@ -155,7 +155,7 @@ class TestDelegate extends SliverPersistentHeaderDelegate {
     return Container(
       color: Colors.red,
       width: double.infinity,
-      height: 550,
+      height: 1000,
       child: const Center(
         child: Text("header"),
       ),
@@ -163,10 +163,10 @@ class TestDelegate extends SliverPersistentHeaderDelegate {
   }
 
   @override
-  double get maxExtent => 550;
+  double get maxExtent => 1000;
 
   @override
-  double get minExtent => 550;
+  double get minExtent => 1000;
 
   @override
   bool shouldRebuild(covariant SliverPersistentHeaderDelegate oldDelegate) {
