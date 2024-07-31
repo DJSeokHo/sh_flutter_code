@@ -6,7 +6,7 @@ void main() {
 }
 
 class OnlineVideoPlayerExample extends StatefulWidget {
-  const OnlineVideoPlayerExample({Key? key}) : super(key: key);
+  const OnlineVideoPlayerExample({super.key});
 
   @override
   State<StatefulWidget> createState() {

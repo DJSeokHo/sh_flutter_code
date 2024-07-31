@@ -90,8 +90,8 @@ class _DifficultExpandedView extends StatelessWidget {
 class _ExpandedView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: const [
+    return const Row(
+      children: [
         Expanded(
           flex: 1,
           child: _IconView(Colors.blue, Icons.search),
@@ -113,8 +113,8 @@ class _ExpandedFixedSizeAndAutoExpandedView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     /// 第1, 4个固定，第2, 3个按照比例自己调整
-    return Row(
-      children: const [
+    return const Row(
+      children: [
         _IconView(Colors.blue, Icons.search),
         Expanded(
           flex: 2,

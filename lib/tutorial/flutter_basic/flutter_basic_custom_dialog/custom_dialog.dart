@@ -14,11 +14,11 @@ class CustomDialog extends Dialog {
           color: Colors.white,
           child: Column(
             children: [
-              Container(
+              const SizedBox(
                 width: 300,
                 height: 40,
                 child: Stack(
-                  children: const [
+                  children: [
                     Align(
                       alignment: Alignment.center,
                       child: Text("About Us"),

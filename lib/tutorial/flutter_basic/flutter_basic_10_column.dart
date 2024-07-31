@@ -27,12 +27,12 @@ class _ColumnInContainerExampleView extends StatelessWidget {
       width: 400,
       height: 500,
       color: Colors.black54,
-      child: Column(
+      child: const Column(
         mainAxisAlignment: MainAxisAlignment.start,
         // mainAxisAlignment: MainAxisAlignment.spaceEvenly, // 在父view的垂直位置，和row相反
         crossAxisAlignment: CrossAxisAlignment.end, // 在父view的水平位置，和row相反
         // crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: const [
+        children: [
           _IconView(100, Colors.blue, Icons.search),
           _IconView(120, Colors.orange, Icons.home),
           _IconView(110, Colors.red, Icons.select_all),
@@ -47,11 +47,11 @@ class _ColumnExampleView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return const Column(
       // mainAxisAlignment: MainAxisAlignment.center,
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       crossAxisAlignment: CrossAxisAlignment.center,
-      children: const [
+      children: [
         _IconView(100, Colors.blue, Icons.search),
         _IconView(120, Colors.orange, Icons.home),
         _IconView(110, Colors.red, Icons.select_all),

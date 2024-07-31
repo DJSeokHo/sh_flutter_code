@@ -24,14 +24,14 @@ class _WrapExampleView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
+    return const SingleChildScrollView(
       child: Wrap(
         direction: Axis.horizontal, // 主轴方向
         alignment: WrapAlignment.start, // 主轴对齐方式
         spacing: 5, // 主轴方向的间距
         runAlignment: WrapAlignment.start, // 新的一行，即纵轴的对齐方式
         runSpacing: 5, // 新的一行，即纵轴的间距
-        children: const [
+        children: [
           _TagItemView("xxxxx"),
           _TagItemView("xxx"),
           _TagItemView("xxxxxxxxxxxxxxxxxxxxxxxxxxx"),

@@ -46,7 +46,7 @@ class _ListItemViewState extends State<_ListItemView> {
   @override
   Widget build(BuildContext context) {
     if (!_expand) {
-      return Container(
+      return SizedBox(
         width: double.infinity,
         height: 200,
         child: ElevatedButton(
@@ -59,7 +59,7 @@ class _ListItemViewState extends State<_ListItemView> {
         ),
       );
     } else {
-      return Container(
+      return SizedBox(
         width: double.infinity,
         height: 100,
         child: ElevatedButton(

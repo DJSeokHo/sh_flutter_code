@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 import '../../framework/debug/i_log.dart';
 
 class VClass {
@@ -79,7 +78,7 @@ class Person {
   // }
 
   void call(String content) {
-    ILog.debug(_tag, "this is person object with parameter ${content}");
+    ILog.debug(_tag, "this is person object with parameter $content");
   }
 }
 

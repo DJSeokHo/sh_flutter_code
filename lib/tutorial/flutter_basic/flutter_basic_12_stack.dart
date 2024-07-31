@@ -29,8 +29,8 @@ class _StackViewWithPositiond extends StatelessWidget {
       width: 300,
       height: 400,
       color: Colors.red,
-      child: Stack(
-        children: const [
+      child: const Stack(
+        children: [
           Positioned(
             left: 10, // 距离左边 10
             child: Icon(Icons.home, size: 40, color: Colors.white),
@@ -59,8 +59,8 @@ class _StackViewWithAlign extends StatelessWidget {
       width: 300,
       height: 400,
       color: Colors.red,
-      child: Stack(
-        children: const [
+      child: const Stack(
+        children: [
           Align(
             alignment: Alignment.topLeft,
             child: Icon(Icons.home, size: 40, color: Colors.white),

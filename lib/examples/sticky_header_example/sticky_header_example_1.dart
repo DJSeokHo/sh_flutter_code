@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
 }
 
 class _HomePage extends StatefulWidget {
-  const _HomePage({super.key});
+  const _HomePage();
 
   @override
   State<StatefulWidget> createState() {

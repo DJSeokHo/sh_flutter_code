@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class CartItemCountNotifier extends StateNotifier<int> {
-  CartItemCountNotifier(int initialCount) : super(initialCount);
+  CartItemCountNotifier(super.initialCount);
 
   void increment() => state++;
   void decrement() {
@@ -43,7 +43,7 @@ class CartOrderModel {
 class CartOrderViewModel extends ConsumerWidget {
   final List<CartOrderModel> cartItems;
 
-  CartOrderViewModel({required this.cartItems});
+  const CartOrderViewModel({super.key, required this.cartItems});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -62,7 +62,7 @@ class ListItemView extends ConsumerWidget {
   final CartOrderModel item;
   final int cartItemCount;
 
-  ListItemView({required this.item, required this.cartItemCount});
+  const ListItemView({super.key, required this.item, required this.cartItemCount});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -77,14 +77,14 @@ class ListItemView extends ConsumerWidget {
           Row(
             children: [
               IconButton(
-                icon: Icon(Icons.remove),
+                icon: const Icon(Icons.remove),
                 onPressed: () {
                   ref.read(cartItemCountProvider(item.cartId).notifier).decrement();
                 },
               ),
               Text('$cartItemCount'),
               IconButton(
-                icon: Icon(Icons.add),
+                icon: const Icon(Icons.add),
                 onPressed: () {
                   ref.read(cartItemCountProvider(item.cartId).notifier).increment();
                 },
@@ -98,15 +98,17 @@ class ListItemView extends ConsumerWidget {
 }
 
 void main() {
-  runApp(ProviderScope(child: MyApp()));
+  runApp(const ProviderScope(child: MyApp()));
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(title: Text('Cart')),
+        appBar: AppBar(title: const Text('Cart')),
         body: CartOrderViewModel(
           cartItems: [
             CartOrderModel(

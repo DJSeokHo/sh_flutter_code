@@ -27,12 +27,12 @@ class _RowInContainerExampleView extends StatelessWidget {
       width: 400,
       height: 500,
       color: Colors.black54,
-      child: Row(
+      child: const Row(
         // mainAxisAlignment: MainAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.spaceEvenly, // 在父view的水平位置
         // crossAxisAlignment: CrossAxisAlignment.center, // 在父view的垂直位置
         crossAxisAlignment: CrossAxisAlignment.center, // 在父view的垂直位置
-        children: const [
+        children: [
           _IconView(100, Colors.blue, Icons.search),
           _IconView(120, Colors.orange, Icons.home),
           _IconView(110, Colors.red, Icons.select_all),
@@ -47,11 +47,11 @@ class _RowExampleView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
+    return const Row(
       // mainAxisAlignment: MainAxisAlignment.center,
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       crossAxisAlignment: CrossAxisAlignment.center,
-      children: const [
+      children: [
         _IconView(100, Colors.blue, Icons.search),
         _IconView(120, Colors.orange, Icons.home),
         _IconView(110, Colors.red, Icons.select_all),

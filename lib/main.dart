@@ -5,32 +5,32 @@ import 'framework/debug/i_log.dart';
 // --web-hostname 192.168.0.4 --web-port 8081
 void main() {
 
-  const _tag = "main";
+  const tag = "main";
 
   // device info, only for not web
   if(Platform.isAndroid) {
     // Android
-    ILog.debug(_tag, "Android");
+    ILog.debug(tag, "Android");
   }
   else if(Platform.isIOS) {
     // IOS
-    ILog.debug(_tag, "iOS");
+    ILog.debug(tag, "iOS");
   }
   else if(Platform.isFuchsia) {
     // Fuchsia
-    ILog.debug(_tag, "Fuchsia");
+    ILog.debug(tag, "Fuchsia");
   }
   else if(Platform.isWindows) {
     // Windows
-    ILog.debug(_tag, "Window");
+    ILog.debug(tag, "Window");
   }
   else if(Platform.isMacOS) {
     // MacOS
-    ILog.debug(_tag, "Mac");
+    ILog.debug(tag, "Mac");
   }
   else if(Platform.isLinux) {
     // Linux
-    ILog.debug(_tag, "Linux");
+    ILog.debug(tag, "Linux");
   }
 
   // disable web right click only for web

@@ -21,7 +21,7 @@ class _ContentView extends State<StatefulWidget> {
         appBar: AppBar(
           title: const Text("Check box list item"),
         ),
-        body: Container(
+        body: SizedBox(
           width: double.infinity,
           height: double.infinity,
           child: Column(

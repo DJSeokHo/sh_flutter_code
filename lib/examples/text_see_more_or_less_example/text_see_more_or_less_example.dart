@@ -34,10 +34,10 @@ class ReadMoreText extends StatefulWidget {
   final int trimLines;
 
   const ReadMoreText({
-    Key? key,
+    super.key,
     required this.text,
     this.trimLines = 2,
-  }) : super(key: key);
+  });
 
   @override
   _ReadMoreTextState createState() => _ReadMoreTextState();

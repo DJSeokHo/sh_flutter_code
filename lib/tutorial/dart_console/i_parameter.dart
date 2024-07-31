@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 import '../../framework/debug/i_log.dart';
 
 void main() {
@@ -39,7 +38,7 @@ void main() {
   ILog.debug(tag, formatString);
 
   // 只能赋值一次
-  final String finalString = "123";
+  const String finalString = "123";
 
   // 常量，也只能赋值一次
   const String constString = "aaa";
