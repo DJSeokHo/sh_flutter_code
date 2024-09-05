@@ -51,8 +51,6 @@ dependencies:
   webview_flutter_wkwebview: ^3.14.0
   webview_flutter_android: ^3.16.6
 
-  flutter_inappwebview: ^6.0.0
-
   flutter_riverpod: ^2.5.1
 
   tosspayments_widget_sdk_flutter: ^2.0.0
