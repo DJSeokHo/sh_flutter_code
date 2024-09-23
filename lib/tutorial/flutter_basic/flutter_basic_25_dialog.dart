@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:fluttertoast/fluttertoast.dart';
 import 'package:sh_flutter_code/framework/debug/i_log.dart';
 
 class FlutterBasicDialog extends StatelessWidget {
@@ -79,10 +78,10 @@ class _ContentView extends State<StatefulWidget> {
               ),
               const SizedBox(height: 20,),
               ElevatedButton(
-                  onPressed: () {
-                    _toast(context);
-                  },
-                  child: const Text("Toast")
+                onPressed: () {
+
+                },
+                child: const Text("Toast")
               ),
               const SizedBox(height: 20,),
             ],
@@ -181,19 +180,6 @@ class _ContentView extends State<StatefulWidget> {
             )
           );
         }
-    );
-  }
-
-  void _toast(BuildContext context) async {
-
-    Fluttertoast.showToast(
-        msg: "This is Center Short Toast",
-        toastLength: Toast.LENGTH_SHORT,
-        gravity: ToastGravity.CENTER,
-        timeInSecForIosWeb: 1,
-        backgroundColor: Colors.red,
-        textColor: Colors.white,
-        fontSize: 16.0
     );
   }
 }
