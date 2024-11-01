@@ -1,9 +1,10 @@
 import 'dart:io';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'framework/debug/i_log.dart';
 
 // --web-hostname 192.168.0.4 --web-port 8081
-void main() {
+Future<void> main() async {
 
   const tag = "main";
 
@@ -35,6 +36,8 @@ void main() {
 
   // disable web right click only for web
   // window.document.onContextMenu.listen((evt) => evt.preventDefault());
+
+  // 这里需要配合Firebase CLI用命令行来注册应用后才能正常初始化
 
   runApp(const MyApp());
 }
