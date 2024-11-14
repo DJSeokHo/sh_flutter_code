@@ -81,6 +81,12 @@
       <excludeFolder url="file://$MODULE_DIR$/ios/.symlinks/plugins/os_info_plugin/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/ios/.symlinks/plugins/os_info_plugin/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/ios/.symlinks/plugins/os_info_plugin/build" />
+      <excludeFolder url="file://$MODULE_DIR$/libs/passikey_flutter_sdk/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/libs/passikey_flutter_sdk/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/libs/passikey_flutter_sdk/build" />
+      <excludeFolder url="file://$MODULE_DIR$/libs/passikey_flutter_sdk/example/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/libs/passikey_flutter_sdk/example/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/libs/passikey_flutter_sdk/example/build" />
     </content>
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Dart SDK" level="project" />
